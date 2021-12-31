@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style of navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  background: #222;
+}
+.navbar img {
+  margin-left: 30px;
+  height: 15vh;
+  width: 15vw;
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: space-between;
+  text-align: center;
+}
+.navbar li {
+  list-style: none;
+  /* padding: 1rem 2rem 1.15rem; */
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+}
+
+.navbar li:hover {
+  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+.navbar li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+/* style of navbar */
+
+#banner {
+  position: relative;
+  width: 100%;
+  min-height: 50vw;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 50vw;
+  overflow: hidden;
+}
+.layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+}
+.layer .content-body {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: white;
+}
+.layer img {
+  position: absolute;
+  width: 35%;
+  top: 30%;
+  left: 30%;
+  transform: translateY(-50%, -50%);
+}
+.top img {
+  margin-top: 51px;
+}
+.layer h1 {
+  font-size: 2em;
+}
+.bottom {
+  background: #222;
+  z-index: 1;
+}
+.bottom .content-body {
+  right: 5%;
+}
+.bottom h1 {
+  color: #ef816c;
+}
+.top {
+  background: #eee;
+  color: #222;
+  z-index: 2;
+  width: 50vw;
+}
+.top .content-body {
+  left: 5%;
+  color: #222;
+}
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #ef816c;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+}
+.banner .handle {
+  top: 50%;
+  transform: rotate(30deg) translate(-50%);
+  height: 200%;
+  transform-origin: top;
+}
+.banner .top {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+.banner .top .content-wrap {
+  transform: skew(30deg);
+  margin-left: 1000px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 75%;
+  }
+}
+/* .ride-booking {
+}
+.ride-booking ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 15vh;
+  padding-top: auto;
+  padding-bottom: auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 3px 6px 16px -2px rgba(0, 0, 0, 0.74);
+}
+.ride-booking li {
+  color: #222;
+}
+.ride-booking li i {
+  margin-right: 10px;
+} */
