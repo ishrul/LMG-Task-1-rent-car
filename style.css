@@ -14,10 +14,10 @@ body {
 }
 .navbar img {
   margin-left: 30px;
-  height: 15vh;
-  width: 15vw;
+  height: 10vh;
+  width: 20vw;
 }
-.navbar ul {
+ul {
   display: flex;
   width: 100%;
   margin: auto;
@@ -25,9 +25,9 @@ body {
   justify-content: space-between;
   text-align: center;
 }
-.navbar li {
+li {
   list-style: none;
-  /* padding: 1rem 2rem 1.15rem; */
+  padding: 1rem 2rem 1.15rem;
   text-transform: uppercase;
   cursor: pointer;
   color: #ebebeb;
@@ -35,7 +35,7 @@ body {
   margin: auto;
 }
 
-.navbar li:hover {
+li:hover {
   background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
   background-size: 100% 100%;
   color: #27262c;
@@ -43,7 +43,7 @@ body {
   text-shadow: 0 -1px 0 #ef816c;
   font-weight: bold;
 }
-.navbar li:active {
+li:active {
   transform: translateY(4px);
 }
 
